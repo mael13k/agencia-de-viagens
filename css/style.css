@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Raleway' sans-serif;
+    color: rgb(22, 22, 22);
+}
+
+header .largura, footer 
+.largura, .formulario, 
+.conteudo-1, .conteudo-3,
+.conteudo-2, .conteudo-4 { 
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.topo img {
+    width: 30px;
+    height: 30px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: start;   
+    padding: 5px 105px;
+    gap: 10px;
+}
+
+.topo p {
+    color: rgb(85, 4, 161);
+}
+
+.conteudo-1, .conteudo-3 {
+    padding: 10px 105px;
+}
+
+.conteudo {
+    background-image: url("../assets/bahia.jpg");
+    background-size: cover;    
+    padding: 30px 105px;
+    margin-bottom: 10px;
+}
+
+.conteudo-2 {
+    padding: 10px 105px 10px 105px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    max-width: 400px;
+    height: 245px;
+}
+
+.faixa {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    opacity: 50%;
+}
+
+.card p {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding: 1px 5px;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards {
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+}
+
+.linha-1, .linha-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-menor {
+    position: relative;
+    height: 120px;
+    max-width: 200px;
+}
+
+.cards .faixa-menor {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    opacity: 50%;
+}
+
+.cards p {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 1px 5px;
+}
+
+.conteudo-principal {
+    background-color: rgb(229, 229, 229);
+}
+
+.conteudo-4 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px 10px 100px;
+    gap: 10px;
+}
+
+.conteudo-4 img {
+    width: 400px;
+    height: 280px;
+}
+
+span {
+    padding-left: 10px;
+}
+
+.box p {
+    font-size: 13px;
+    color: gray;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: white;
+    line-height: 20px;
+}
+
+.rodape {
+    background-color: rgb(85, 4, 161);
+    padding: 10px 105px 5px 105px;
+}
+
+.direitos {
+    text-align: center
+}
+
+.rodape img {
+    width: 15px;
+    height: 15px;
+}
+
+.rodape p {
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.rodape h3 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sessao-4, .sessao-2{
+    display: flex;
+}
+
+.sessao-3, .sessao-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 10px;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 20px 20px;
+    line-height: 30px;
+    background-color: white;
+}
+
+form input, .inputs-menores select{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.box-roxo {
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box-roxo p {
+    color: white;
+}
+
+.botao {
+    text-align: justify;
+    color: white;
+    padding: 10px;
+    max-width: 140px;
+}
+
+.inputs-menores {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inputs-ida, .inputs-volta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+.checkbox label, .radios label {
+    padding-right: 20px;
+}
+
+.box-roxo img {
+    width: 15px;
+    height: 15px;
+}
+
+.botao, .rodape, .box-roxo {
+    background-color: rgb(85, 4, 161);
+}
+
+@media (min-width: 1440px){
+    header .largura, footer .largura, .formulario, .conteudo-1, .conteudo-3,
+    .conteudo-2, .conteudo-4 { max-width: 800px; margin: 0 auto;}
+}
+
+@media (min-width: 1024px){
+    .card { width: 400px; }
+}
+
+@media (max-width: 768px){
+   .topo, .conteudo, .conteudo-1, .conteudo-2, .conteudo-3,
+   .conteudo-4 { padding-left: 20px; padding-right: 20px; }
+   .conteudo-formulario .botao { width: 100%; text-align: center; }
+   .conteudo-formulario { padding: 10px; }
+   .conteudo-2, .cards { display: block; }
+   .card, .linha-1, .linha-2 { margin-bottom: 5px; }
+   .card, .cards .card-menor { max-width: 700px; height: 200px; }
+   .conteudo-4 { display: block; }
+   .conteudo-4 img { width: 100%; }
+   .box { margin-bottom: 10px; }
+   .informacoes { display: block; }
+   .sessao-1, .sessao-2 { margin-bottom: 20px; align-items: center;}
+   .formulario, card, .conteudo-4 { max-width: 90vw; }
+   .rodape { display: flex; flex-direction: column; }
+   .rodape h3 { padding-bottom: 0px; }
+   .direitos { padding-top: 10px; }
+}
+
+@media (max-width: 540px ){
+    .conteudo-formulario .inputs-menores
+    {display: block;}
+    .radios, .checkbox { display: flex; flex-direction: column; }
+}
+
+@media (max-width: 425px ){
+    * { font-size: 13px; }            
+}
